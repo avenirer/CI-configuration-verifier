@@ -15,6 +15,8 @@ class Verify extends CI_Controller
 	
 	public function index()
 	{
+        // get PHP version
+        $data['phpversion'] = phpversion();
         // we should retrieve the environment we are into
         $data['environment'] = ENVIRONMENT;
 
