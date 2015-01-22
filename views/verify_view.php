@@ -295,14 +295,6 @@
             <td><?php echo(($config['sess_encrypt_cookie']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
         </tr>
         <tr>
-            <th>Use database for sessions:</th>
-            <td><?php echo(($config['sess_use_database']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
-        </tr>
-        <tr>
-            <th>Session table name:</th>
-            <td><?php echo $config['sess_table_name']; ?></td>
-        </tr>
-        <tr>
             <th>Match IP for sessions:</th>
             <td><?php echo(($config['sess_match_ip']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
         </tr>
