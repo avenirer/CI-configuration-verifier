@@ -295,10 +295,6 @@
             <td><?php echo(($config['sess_match_ip']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
         </tr>
         <tr>
-            <th>Match user agent for sessions:</th>
-            <td><?php echo(($config['sess_match_useragent']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
-        </tr>
-        <tr>
             <th>Session time to update:</th>
             <td><?php echo $config['sess_time_to_update']; ?></td>
         </tr>
