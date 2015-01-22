@@ -197,7 +197,23 @@
         </tr>
         </tbody>
     </table>
-    <table style="width: 400px;">
+</div>
+<div style="float: right; width: 400px;">
+    <table style="width: 100%;">
+        <thead>
+        <tr>
+            <th>Writable directories</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        echo ($writable_cache) ? '<tr><td>The cache directory is writable</td></tr>' : '<tr><td><span class="red">The cache directory is not writable</span></td></tr>';
+        echo ($writable_logs) ? '<tr><td>The logs directory is writable</td></tr>' : '<tr><td><span class="red">The logs directory is not writable</span></td></tr>';
+        echo '<tr><td>'.$writable_uploads.'</td></tr>';
+        ?>
+        </tbody>
+    </table>
+    <table style="width: 100%;">
         <thead>
         <tr>
             <th colspan="2">XSS:</th>
@@ -249,22 +265,6 @@
                 ?>
             </td>
         </tr>
-        </tbody>
-    </table>
-</div>
-<div style="float: right; width: 400px;">
-    <table style="width: 100%;">
-        <thead>
-        <tr>
-            <th>Writable directories</th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php
-        echo ($writable_cache) ? '<tr><td>The cache directory is writable</td></tr>' : '<tr><td><span class="red">The cache directory is not writable</span></td></tr>';
-        echo ($writable_logs) ? '<tr><td>The logs directory is writable</td></tr>' : '<tr><td><span class="red">The logs directory is not writable</span></td></tr>';
-        echo '<tr><td>'.$writable_uploads.'</td></tr>';
-        ?>
         </tbody>
     </table>
     <table style="width: 100%;">
