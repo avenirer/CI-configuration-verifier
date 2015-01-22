@@ -184,10 +184,6 @@
             <td><?php echo(($config['compress_output']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
         </tr>
         <tr>
-            <th>Minify output:</th>
-            <td><?php echo(($config['minify_output']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
-        </tr>
-        <tr>
             <th>Time reference:</th>
             <td><?php echo $config['time_reference']; ?></td>
         </tr>
