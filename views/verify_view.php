@@ -189,7 +189,7 @@
         </tr>
         <tr>
             <th>Rewrite short tags:</th>
-            <td><?php echo $config['rewrite_short_tags']; ?></td>
+            <td><?php echo $config['rewrite_short_tags'] ? 'TRUE' : '<span class="red">FALSE</span>'; ?></td>
         </tr>
         <tr>
             <th>Reverse Proxy IPs:</th>
