@@ -291,10 +291,6 @@
             <td><?php echo ($config['sess_expiration']==0) ? 'Expire on close' : $config['sess_expiration']; ?></td>
         </tr>
         <tr>
-            <th>Session encrypt cookie:</th>
-            <td><?php echo(($config['sess_encrypt_cookie']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
-        </tr>
-        <tr>
             <th>Match IP for sessions:</th>
             <td><?php echo(($config['sess_match_ip']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
         </tr>
