@@ -288,11 +288,7 @@
         </tr>
         <tr>
             <th>Session expiration:</th>
-            <td><?php echo $config['sess_expiration']; ?></td>
-        </tr>
-        <tr>
-            <th>Session expire on close:</th>
-            <td><?php echo(($config['sess_expire_on_close']) ? 'TRUE' : '<span class="red">FALSE</span>'); ?></td>
+            <td><?php echo ($config['sess_expiration']==0) ? 'Expire on close' : $config['sess_expiration']; ?></td>
         </tr>
         <tr>
             <th>Session encrypt cookie:</th>
